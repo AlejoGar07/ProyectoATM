@@ -3,8 +3,7 @@ package atmproject;
 import java.util.Scanner;
 
 public class Teclado {
-    private Scanner scan;
-    
+    private Scanner scan;    
     public Teclado(){
         scan=new Scanner(System.in);
     }

@@ -1,13 +1,10 @@
 package atmproject;
 
 public class Cuenta {
-private float saldo;
+float saldo=50;
 private float saldoFlotante;
 int numeroC;
 private int nip;
-
-public Cuenta(String nombre){
-}
 
 public float getSaldo(){
     return saldo;
@@ -30,6 +27,8 @@ public void setSaldo(float saldo){}
     public void setNumeroC(int numeroC) {
         if(numeroC > 9999 && numeroC < 100000){
         this.numeroC = numeroC;
+        }else{
+            System.out.println("Error");
         }
     }
 
@@ -38,7 +37,10 @@ public void setSaldo(float saldo){}
     }
 
     public void setNip(int nip) {
-        this.nip = nip;
+        if(nip > 9999 && nip < 100000){
+        this.nip = nip;   
+        }
+        
     }
     
     public int obtenersaldo(int numeroC){
